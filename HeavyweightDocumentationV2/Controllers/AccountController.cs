@@ -44,8 +44,15 @@ namespace HeavyweightDocumentationV2.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
-            ViewBag.ReturnUrl = returnUrl;
-            return View();
+            if (User.Identity.GetUserId() != null)
+            {
+                return RedirectToAction("Home", "Home");
+            }
+            else
+            {
+                ViewBag.ReturnUrl = returnUrl;
+                return View();
+            }
         }
 
         private ApplicationSignInManager _signInManager;
@@ -142,7 +149,14 @@ namespace HeavyweightDocumentationV2.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            return View();
+            if (User.Identity.GetUserId() != null)
+            {
+                return RedirectToAction("Home", "Home");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         //
