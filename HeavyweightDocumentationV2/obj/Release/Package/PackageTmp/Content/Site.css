@@ -1,0 +1,110 @@
+﻿html{
+    min-height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+    color: ghostwhite;
+
+    background: #b5bdc8; /* Old browsers */
+    background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 7%, #28343b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b5bdc8), color-stop(7%,#828c95), color-stop(100%,#28343b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #b5bdc8 0%,#828c95 7%,#28343b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #b5bdc8 0%,#828c95 7%,#28343b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #b5bdc8 0%,#828c95 7%,#28343b 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 7%,#28343b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+
+}
+
+.blue-text {
+    color: cornflowerblue;
+}
+.italics {
+    font-style: italic;
+}
+
+/*Header shadowing*/
+h1{
+    text-shadow: 2px 2px 15px black;
+}
+h2{
+    text-shadow: 2px 2px 15px black;
+}
+h3{
+    text-shadow: 2px 2px 15px black;
+}
+h4{
+    text-shadow: 2px 2px 15px black;
+}
+h5{
+    text-shadow: 2px 2px 15px black;
+}
+h6{
+    text-shadow: 2px 2px 15px black;
+}
+
+
+body a {
+    color: orange;
+    outline: 0;
+    border-style: none;
+
+    text-shadow: .5px .5px .5px black;
+}
+
+body a:hover {
+    color: cornflowerblue;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.max-width {
+    width: 100%;
+    margin-top: 40px;
+}
+.img-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Changing list glyph icons to images*/
+ul.unchecked {
+    list-style-image: url("SiteContentImages/ListIcons/unchecked.png");
+}
+li.checkYes {
+    list-style-image: url("SiteContentImages/ListIcons/checkYes.png");
+}
+li.checkNo {
+    list-style-image: url("SiteContentImages/ListIcons/checkNo.png");
+}
+
+/*Rando added elements*/
+#development-preface {
+    float: left;
+}
+
+#todo-list {
+    margin-top: 100px;
+}
+
+#checkbox-key{
+    float: right;
+    margin-right: 5%;
+}
+
+/*bootsnipp added elements*/

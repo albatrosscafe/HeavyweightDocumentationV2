@@ -1,0 +1,211 @@
+﻿@{
+    ViewBag.Title = "Heavyweight Documentation";
+}
+
+
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message:</h3>
+
+<article id="aboutProgressAccordion">
+
+    <div id="overviewTitle"><h4>Overview</h4></div>
+    <div id="overviewContent">
+        <p>"Heavyweight Documentation" is a site that allows users to manage their weightlifting progress over a period of time.</p>
+        <p>
+            The goal of the project is to provide a personal area on the web in which a user can track and view the statistics of their weightlifting career.
+            It sacrifices some of the fancier features that similar websites might have in an effort to keep the site as user-friendly and efficient as possible.
+        </p>
+        <p>That being said, this site caters more to the weightlifting aspect of physical fitness than to fitness in general. It will not have a sections that watches your meals and calories. It is purely intended to be an enhanced online workout journal.
+        <p>
+            The main selling point of this project is that nearly everything is customizable.
+            Whereas similar programs force you to adhere to their design by making you select workouts and exercises from their predefined lists, this project allows you to create and modify everything to your own standards.
+        </p>
+        <div class="max-width"><img src="~/Content/SiteContentImages/About/exampleEntry.png" alt="example workout log entry" class="img-responsive img-rounded img-center" /><h4 class="text-center italics">A very crude example of a workout entry</h4></div>
+    </div>
+
+    <div id="featuresTitle"><h4>Features</h4></div>
+    <div id="featuresContent">
+        <i>Key Core Features</i>
+        <ul>
+            <li>Enter in personal weightlifting statistics such as bodyweight, personal records, and 1-repetition maximums.</li>
+            <li>Create a workout journal where you can input and manage workouts as they are completed.</li>
+            <li>View statistics about your strength gains, losses, bodyweight changes, etc. using informative tables and charts.</li>
+        </ul>
+        <br />
+        <i>Customizable Aspects</i>
+        <ul>
+            <li>Exercise Categories – create predefined exercise groups, such as “Leg Exercises”.</li>
+            <li>Exercises – everyone has their own nicknames for the exercises they do. You can create an exercise, name it whatever you want, give it a description, and put it in one of your categories.</li>
+            <li>Exercise Set and Workout Tags – add a custom tag to an set or workout you completed, such as “failed last rep” or “easy workout”.</li>
+            <li>Achievements – accomplish fitness goals and receive achievement or status rewards. You can create your own goals as well as receive predefined achievements.</li>
+            <li>Ratings – rate your workouts on any scale that you define. You could rate on a scale of 1 – 10, 0 – 5, A – Z, good – terrible, salmon – dog, or anything else that you come up with</li>
+        </ul>
+        <p>The secion below this goes into more detail.</p>
+    </div>
+
+    <div id="developmentChecklistTitle"><h4>Development Progress</h4></div>
+    <div id="developmentChecklistContent">
+        <p id="development-preface">Outlined here is a tentative list of content and functionality that will be marked off as progress is made.</p>
+
+        <div id="checkbox-key">
+            <h4>Key:</h4>
+            <p>
+                <img alt="unchecked box" src="~/Content/SiteContentImages/ListIcons/unchecked.png" /> - Incomplete<br />
+                <img alt="checked yes box" src="~/Content/SiteContentImages/ListIcons/checkYes.png" /> - Complete<br />
+                <img alt="checked no box" src="~/Content/SiteContentImages/ListIcons/checkNo.png" /> - Cancelled<br />
+            </p>
+        </div>
+
+        <ol id="todo-list">
+            <li>
+                Registration<ul class="unchecked">
+                    <li class="checkYes">
+                        Allow the user to register for an account. Registration requires a username, email, and secure password
+                        <ul class="unchecked">
+                            <li>The username must be unique from all other usernames in the database.</li>
+                            <li>Email address set up to be used for account verification/password recovery.</li>
+                            <li class="checkYes">Password must be at least 6 letters and contain at least one of each of the following: capital letter, lowercase letter, digit, non digit</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Login<ul class="unchecked">
+                    <li>Login securely using a registered username and password combination.</li>
+                    <li>Login includes link for password reset.</li>
+                </ul>
+            </li>
+            <li>
+                Profile View and Edit<ul class="unchecked">
+                    <li>Users can edit their physical characteristics including height, weight, and other measurements (bicep circumference, neck length, etc.),</li>
+                    <li>Manage personal records - For those training for personal records, you have the option here to enter 1-repetition maximums on exercises you have defined, as well as enter in other personal records that you define (for ex: “Ran 1-mile in 7m:42s.”</li>
+                    <li>Users can manage account settings including resetting their password, modifying their email, or deleting their account.</li>
+                    <li>
+                        Manage customized content, including: <ul class="unchecked">
+                            <li>Exercises - "Incline Bench Press", "Deadlift", "Bicep Cursl"</li>
+                            <li>Exercise Groups – “Back exercises”, “Shoulders”, “Power lifts”</li>
+                            <li>Tags – “Easy set”, “Used a weight belt”, “Bad form”</li>
+                            <li>Achievements – “Bench press 300 pounds”, “Weigh 180 pounds”</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Input Workout Log<ul class="unchecked">
+                    <li>
+                        User can input their daily workouts here. This includes:<ul class="unchecked">
+                            <li>Inputting preliminary info – date, current bodyweight, which exercise group(s) they will be working, and their start and end times.</li>
+                            <li>Exercise info – This is information that includes the name of the exercise, the number of sets done, the number of reps done for each set, and the weight used at each set. This also includes up to 3 tags that can be added to each set.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                View Workout Log<ul class="unchecked">
+                    <li>View previous workouts</li>
+                    <li>Edit previous workouts</li>
+                    <li>Option to search for workouts by date or within date range, as well as by workout type (e.g. return all "back" workouts)</li>
+                </ul>
+            </li>
+            <li>
+                View Workout Statistics<ul class="unchecked">
+                    <li>
+                        Users can view statistics based on their workout or physical progress. All Progress will be viewable with either a:
+                        <ul class="unchecked">
+                            <li>Table - all statistics are shown, sortable by different columns.</li>
+                            <li>Graph - an informative graph is generated from certain statistics. The user can filter statistics by date.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Available workout statistics:
+                        <ul class="unchecked">
+                            <li>Total weight lifted – this includes the total sum of ALL weight lifted ever. It combines the sets, reps, and weights from all workouts in the workout log and sums them. Can be filtered by exercise group.</li>
+                            <li>Total reps completed – returns the sum of #of reps from the workout log. Can be filtered by exercise group.</li>
+                            <li>Bodyweight progression – view the rising and falling of the user’s bodyweight over a specified period of time.</li>
+                            <li>Average workout length – view the mean average duration of your workouts. Can be filtered by exercise group.</li>
+                            <li>Average check-in time – are you a morning, afternoon, evening, or night exerciser?</li>
+                            <li class="checkNo">Average rating – if you choose to rate your workouts, you can determine which workouts you attributed the highest/lowest ratings; Can be filtered by exercise group.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div id="technologiesUsedTitle"><h4>Technologies Used</h4></div>
+    <div id="technologiesUsedContent">
+        <table class="table table-bordered table-responsive table-striped">
+            <thead>
+                <tr>
+                    <th>Development Area</th>
+                    <th>Current Technologies</th>
+                    <th>Planned Future Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Back End Architecture</td>
+                    <td>ASP.net 4.5 MVC 5 with C#</td>
+                    <td>AJAX</td>
+                </tr>
+                <tr>
+                    <td>Front End UI Base</td>
+                    <td>HTML5, JavaScript, CSS3, Bootstrap, jQuery</td>
+                    <td>AJAX</td>
+                </tr>
+                <tr>
+                    <td>Front End UI Plugins</td>
+                    <td>jQueryUI, Magnific Popup</td>
+                    <td>Chart.js</td>
+                </tr>
+                <tr>
+                    <td>Database</td>
+                    <td>SQL Server 2012, Entity framework, LINQ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="ReleaseNotesTitle"><h4>Patch Notes</h4></div>
+    <div id="ReleaseNotesContent">
+
+        <i>11/19/2014 - V0.04</i>
+        <ul>
+            <li>Register and Login pages functional! Database issues resolved.</li>
+            <li>Contact page updated with personal bio.</li>
+            <li>Added website shortcut icon</li>
+        </ul>
+        <hr />
+
+        <i>11/13/2014 - V0.03</i>
+        <ul>
+            <li>"About" page significantly updated with project overview, features, and description of milestones &amp; progress</li>
+            <li>Register &amp; Login pages noted as disabled because of connection string issues with host server</li>
+            <li>Created custom Boostrap button classes to fit theme</li>
+            <li>Created custom jQueryUI modal dialogue classes to fit theme</li>
+            <li>Added custom glyphs for development checklist</li>
+        </ul>
+        <hr />
+
+        <i>11/10/14 - V0.02</i>
+        <ul>
+            <li>Project officially hosted online at <a href="http://www.albatrosscafe.com">http://www.albatrosscafe.com</a></li>
+            <li>Basic Home, About, Contact, Register, and Login pages added</li>
+            <li>Redefinition of entire styling theme</li>
+        </ul>
+        <hr />
+
+        <i>10/26/14 - V0.01</i>
+        <ul>
+            <li>Project development started</li>
+        </ul>
+    </div>
+</article>
+
+
+
+
+
+
+
+<script type="text/javascript" src="~/Scripts/PageScripts/SiteContent/About.js"></script>
