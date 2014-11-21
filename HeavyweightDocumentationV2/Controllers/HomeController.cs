@@ -11,25 +11,25 @@ namespace HeavyweightDocumentationV2.Controllers
     {
         public ActionResult Index()
         {
-            if (User.Identity.GetUserId() != null)
-            {
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("UnregisteredIndex");
-            }
-        }
-        public ActionResult UnregisteredIndex()
-        {
             //comment
             if (User.Identity.GetUserId() != null)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Home");
             }
             else
             {
                 return View();
+            }
+        }
+        public ActionResult Home()
+        {
+            if (User.Identity.GetUserId() != null)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index");
             }
         }
     }
